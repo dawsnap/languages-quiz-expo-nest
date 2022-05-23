@@ -7,7 +7,7 @@ import StartQuiz from './screens/StartQuiz'
 const Stack = createNativeStackNavigator();
 
 
-export default function App() {
+const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -25,3 +25,5 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+export default App;

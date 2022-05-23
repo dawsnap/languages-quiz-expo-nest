@@ -1,10 +1,12 @@
-import { Text } from 'react-native'
+import { Text, View } from 'react-native'
 
 const StartQuiz = () => {
   return (
-    <Text>
-      Empecemos!
-    </Text>
+    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+      <Text>
+        Empecemos!
+      </Text>
+    </View>
   );
 }
 
