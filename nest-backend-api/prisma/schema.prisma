@@ -9,3 +9,32 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Languages {
+  id              Int               @id @default(autoincrement())
+  name            String            @unique
+  icon            String?
+  Languages_words Languages_words[]
+  Quiz_results    Quiz_results[]
+}
+
+model Languages_words {
+  id          Int    @id @default(autoincrement())
+  language_id Int
+  word        String
+  meaning     String
+
+  language Languages @relation(fields: [language_id], references: [id], onDelete: Cascade)
+}
+
+model Quiz_results {
+  id          Int      @id @default(autoincrement())
+  language_id Int
+  finish_time DateTime
+  username    String
+  raw_quiz    Json
+  score       Int
+
+  language Languages @relation(fields: [language_id], references: [id], onDelete: Cascade)
+
+}
