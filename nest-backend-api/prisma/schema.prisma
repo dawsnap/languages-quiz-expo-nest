@@ -10,24 +10,24 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Languages {
+model languages {
   id              Int               @id @default(autoincrement())
   name            String            @unique
   icon            String?
-  Languages_words Languages_words[]
-  Quiz_results    Quiz_results[]
+  languages_words languages_words[]
+  quiz_results    quiz_results[]
 }
 
-model Languages_words {
+model languages_words {
   id          Int    @id @default(autoincrement())
   language_id Int
   word        String
   meaning     String
 
-  language Languages @relation(fields: [language_id], references: [id], onDelete: Cascade)
+  language languages @relation(fields: [language_id], references: [id], onDelete: Cascade)
 }
 
-model Quiz_results {
+model quiz_results {
   id          Int      @id @default(autoincrement())
   language_id Int
   finish_time DateTime
@@ -35,6 +35,6 @@ model Quiz_results {
   raw_quiz    Json
   score       Int
 
-  language Languages @relation(fields: [language_id], references: [id], onDelete: Cascade)
+  language languages @relation(fields: [language_id], references: [id], onDelete: Cascade)
 
 }
