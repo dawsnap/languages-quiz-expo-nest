@@ -12,13 +12,15 @@ const load = async () => {
 
     // Quiz results data should be persisted so it won't be affected by the seeding
 
-    await prisma.$queryRaw`ALTER TABLE Languages AUTO_INCREMENT = 1`;
-    console.log('reset category auto increment to 1');
+    await prisma.$queryRaw`ALTER SEQUENCE languages_id_seq RESTART WITH 1`;
+    console.log('Reset languages table auto_increment to 1');
 
     await prisma.languages.createMany({
       data: languages,
     });
     console.log('Imported languages data');
+
+    console.log('Seeding is completed 🏃');
   } catch (e) {
     console.error(e);
     process.exit(1);
