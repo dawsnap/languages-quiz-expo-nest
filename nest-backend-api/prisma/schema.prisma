@@ -24,7 +24,7 @@ model languages_words {
   word        String
   meaning     String
 
-  language languages @relation(fields: [language_id], references: [id], onDelete: Cascade)
+  language languages @relation(fields: [language_id], references: [id], onDelete: NoAction)
 }
 
 model quiz_results {
@@ -35,6 +35,6 @@ model quiz_results {
   raw_quiz    Json
   score       Int
 
-  language languages @relation(fields: [language_id], references: [id], onDelete: Cascade)
+  language languages @relation(fields: [language_id], references: [id], onDelete: NoAction)
 
 }
