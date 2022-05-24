@@ -21,7 +21,6 @@ const load = async () => {
     console.log('Imported languages data');
 
     console.log('Seeding is completed 🏃');
-
   } catch (e) {
     console.error(e);
     process.exit(1);
