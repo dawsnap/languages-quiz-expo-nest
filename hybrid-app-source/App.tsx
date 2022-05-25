@@ -10,16 +10,14 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: 'QuizApp' }}
         />
         <Stack.Screen
           name="Quiz"
           component={StartQuiz}
-          options={{ title: 'StartQuiz' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
