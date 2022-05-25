@@ -1,4 +1,6 @@
 import { Text, Button, View } from 'react-native'
+// @ts-ignore
+import {API_REST_URL} from 'react-native-dotenv'
 
 const Homescreen = ({ navigation }) => {
   return (
