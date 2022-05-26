@@ -2,7 +2,6 @@ import { Text, Button, View } from 'react-native'
 import { useEffect, useState } from 'react';
 // @ts-ignore
 import {API_REST_URL} from 'react-native-dotenv'
-import useAxios from "axios-hooks"
 import DropDownPicker from 'react-native-dropdown-picker';
 import axios from 'axios';
 
