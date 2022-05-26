@@ -76,6 +76,7 @@ const Homescreen = ({ navigation }) => {
         />
       </View>
       <Button
+        disabled = { value ? false : true }
         title={`Empezar Quiz`}
         onPress={() => navigation.navigate('Quiz')}
       />
