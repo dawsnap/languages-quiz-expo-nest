@@ -1,1 +1,1 @@
-web: prisma db push && npx prisma db seed && npm run start:prod
+web: prisma db push && npx prisma db seed && npm run start:heroku
