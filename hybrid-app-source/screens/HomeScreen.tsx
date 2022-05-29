@@ -36,7 +36,16 @@ const Homescreen = ({ navigation }) => {
   if (!response)
     return (
       <>
-        <Text>Cargando...</Text>
+       <View
+        style={{
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingHorizontal: 15
+        }}
+        >
+        <Text>Cargando....{`${API_REST_URL}/languageslist`}</Text>
+      </View>
       </>
     );
   if (error)
