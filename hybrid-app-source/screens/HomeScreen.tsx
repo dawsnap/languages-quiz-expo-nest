@@ -1,9 +1,16 @@
-import { Text, Button, View } from 'react-native'
+import { Text, Button, View, Image } from 'react-native'
 import { useEffect, useState } from 'react';
 // @ts-ignore
 import {API_REST_URL} from 'react-native-dotenv'
 import DropDownPicker from 'react-native-dropdown-picker';
 import axios from 'axios';
+
+const getImage  = (language) => {
+  switch (language) {
+    case "Inglés":
+      return require('../assets/english_flag.png');
+  }
+}
 
 const Homescreen = ({ navigation }) => {
   const [response, setResponse] = useState(null);
@@ -28,6 +35,7 @@ const Homescreen = ({ navigation }) => {
       return {
         label: language.name,
         value: language.id,
+        icon: () => <Image style={{width:25, height:25}} source={getImage(language.name)} />
       };
     });
     setItems(info);
