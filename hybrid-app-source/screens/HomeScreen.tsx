@@ -9,6 +9,8 @@ const getImage  = (language) => {
   switch (language) {
     case "Inglés":
       return require('../assets/english_flag.png');
+    case "Francés":
+      return require('../assets/french_flag.png');
   }
 }
 
