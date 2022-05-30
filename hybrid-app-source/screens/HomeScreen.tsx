@@ -102,7 +102,10 @@ const Homescreen = ({ navigation }) => {
         <Button
           disabled = { value ? false : true }
           title={`Empezar Quiz`}
-          onPress={() => navigation.navigate('Quiz')}
+          onPress={() => navigation.navigate('Quiz',
+          {
+            selectedQuizId: value,
+          })}
         />
     </SafeAreaView>
     </>

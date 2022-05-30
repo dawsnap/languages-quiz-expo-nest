@@ -1,10 +1,14 @@
 import { Text, View } from 'react-native'
 
-const StartQuiz = () => {
+
+const StartQuiz = ({ route, navigation }) => {
+
+  const { selectedQuizId } = route.params;
+
   return (
     <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
       <Text>
-        Empecemos!
+        Empecemos! {selectedQuizId}
       </Text>
     </View>
   );
