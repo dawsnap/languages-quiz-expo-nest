@@ -5,12 +5,22 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "API_REST_URL":"https://backend-tfg-davidsoriano.herokuapp.com"
+      }
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "API_REST_URL":"https://backend-tfg-davidsoriano.herokuapp.com"
+      }
     },
-    "production": {}
+    "production": {
+        "env": {
+          "API_REST_URL":"https://backend-tfg-davidsoriano.herokuapp.com"
+        }
+    }
   },
   "submit": {
     "production": {}
