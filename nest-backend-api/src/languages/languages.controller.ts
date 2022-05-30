@@ -14,5 +14,8 @@ export class LanguagesController {
   async generateQuizQuestions(@Param() params: any): Promise<any> {
     const { languageId } = params;
     const ids = await this.languagesService.generateRandomIdSchema(languageId);
+    const quiz = await this.languagesService.generateQuiz(ids);
+
+    return quiz;
   }
 }
