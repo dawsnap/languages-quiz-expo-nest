@@ -7,7 +7,7 @@ export class LanguagesService {
 
   async getLanguagesList(): Promise<any> {
     return await this.prisma.languages.findMany({
-      select: { id: true, name: true, icon: true },
+      select: { id: true, name: true },
     });
   }
 }
