@@ -23,7 +23,7 @@ const load = async () => {
     await prisma.languages_words.createMany({
       data: languages_words,
     });
-    console.log('Imported languages data');
+    console.log('Imported languages words data');
 
     console.log('Seeding is completed 🏃');
   } catch (e) {
