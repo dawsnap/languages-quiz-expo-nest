@@ -1,5 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import { languages } from './languages';
+import { languages_words } from './languages_words';
 const prisma = new PrismaClient();
 
 const load = async () => {
@@ -17,6 +18,10 @@ const load = async () => {
 
     await prisma.languages.createMany({
       data: languages,
+    });
+    console.log('Imported languages data');
+    await prisma.languages_words.createMany({
+      data: languages_words,
     });
     console.log('Imported languages data');
 
