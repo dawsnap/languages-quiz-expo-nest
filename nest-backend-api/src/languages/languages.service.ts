@@ -36,10 +36,12 @@ export class LanguagesService {
     for (let i = 0; i < 10; i++) {
       const wronganswers = [];
       for (let i = 0; i < 3; i++) {
-        wronganswers.push(words[Math.floor(Math.random() * words.length) + 1]);
+        wronganswers.push(
+          words[Math.floor(Math.random() * (words.length - 1))],
+        );
       }
       randomQuizSchema.push({
-        rightQuestion: words[Math.floor(Math.random() * words.length) + 1],
+        rightQuestion: words[Math.floor(Math.random() * (words.length - 1))],
         wrongAnswers: wronganswers,
       });
     }
