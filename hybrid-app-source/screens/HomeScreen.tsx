@@ -1,4 +1,4 @@
-import { Text, Button, View, Image } from 'react-native'
+import { Text, Button, View, Image, SafeAreaView } from 'react-native'
 import { useEffect, useState } from 'react';
 // @ts-ignore
 import {API_REST_URL} from 'react-native-dotenv'
@@ -67,38 +67,44 @@ const Homescreen = ({ navigation }) => {
 
   return (
     <>
-      <View
-        style={{
-          backgroundColor: '#171717',
-          flex: 1,
-          alignItems: 'center',
-          justifyContent: 'center',
-          paddingHorizontal: 15
-        }}
-      >
-        <Text
+    <SafeAreaView
+      style={{
+        flex:1,
+        backgroundColor: '#171717'
+      }}>
+        <View
           style={{
-            marginBottom: 15,
-            fontSize: 20,
-            color: 'white',
-            alignItems: 'center'
+            backgroundColor: '#171717',
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingHorizontal: 15
           }}
-        >{`Selecciona un idioma para comenzar`}</Text>
-        <DropDownPicker
-          open={open}
-          value={value}
-          items={items}
-          setOpen={setOpen}
-          setValue={setValue}
-          setItems={setItems}
-          theme="DARK"
+        >
+          <Text
+            style={{
+              marginBottom: 15,
+              fontSize: 20,
+              color: 'white',
+              alignItems: 'center'
+            }}
+          >{`Selecciona un idioma para comenzar`}</Text>
+          <DropDownPicker
+            open={open}
+            value={value}
+            items={items}
+            setOpen={setOpen}
+            setValue={setValue}
+            setItems={setItems}
+            theme="DARK"
+          />
+        </View>
+        <Button
+          disabled = { value ? false : true }
+          title={`Empezar Quiz`}
+          onPress={() => navigation.navigate('Quiz')}
         />
-      </View>
-      <Button
-        disabled = { value ? false : true }
-        title={`Empezar Quiz`}
-        onPress={() => navigation.navigate('Quiz')}
-      />
+    </SafeAreaView>
     </>
   );
 };
