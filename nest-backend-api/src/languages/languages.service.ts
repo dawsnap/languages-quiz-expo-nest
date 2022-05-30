@@ -10,4 +10,24 @@ export class LanguagesService {
       select: { id: true, name: true },
     });
   }
+
+  async generateRandomIdSchema(lang_id): Promise<any> {
+    const wordCount = await this.prisma.languages_words.count({
+      where: { language_id: { equals: parseInt(lang_id) } },
+    });
+
+    const randomIdSchema = [];
+    for (let i = 0; i < 10; i++) {
+      const wronganswers = [];
+      for (let i = 0; i < 3; i++) {
+        wronganswers.push(Math.floor(Math.random() * wordCount) + 1);
+      }
+      randomIdSchema.push({
+        rightQuestion: Math.floor(Math.random() * wordCount) + 1,
+        wrongAnswers: wronganswers,
+      });
+    }
+
+    return randomIdSchema;
+  }
 }
