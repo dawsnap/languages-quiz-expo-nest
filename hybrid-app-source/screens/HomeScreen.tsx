@@ -16,8 +16,6 @@ const getImage  = (language) => {
 
 const Homescreen = ({ navigation }) => {
   const [response, setResponse] = useState(null);
-  const [error, setError] = useState("");
-  const [loading, setloading] = useState(true);
 
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
@@ -56,12 +54,6 @@ const Homescreen = ({ navigation }) => {
         >
         <Text>Cargando....{`${API_REST_URL}/languageslist`}</Text>
       </View>
-      </>
-    );
-  if (error)
-    return (
-      <>
-        <View>{JSON.stringify(error, null, 2)}</View>
       </>
     );
 
