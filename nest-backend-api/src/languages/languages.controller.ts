@@ -13,8 +13,8 @@ export class LanguagesController {
   @Get('listOfWords/:languageId')
   async generateQuizQuestions(@Param() params: any): Promise<any> {
     const { languageId } = params;
-    const ids = await this.languagesService.generateRandomIdSchema(languageId);
-    const quiz = await this.languagesService.generateQuiz(ids);
+    const words = await this.languagesService.getRandomWords(languageId);
+    const quiz = await this.languagesService.generateQuiz(words);
 
     return quiz;
   }
