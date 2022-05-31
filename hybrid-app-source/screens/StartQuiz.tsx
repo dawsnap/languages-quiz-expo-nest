@@ -52,13 +52,20 @@ const StartQuiz = ({ route, navigation }) => {
     </View>
     </>
   );
-
   return (
     <>
-    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-      <Text>
-        {JSON.stringify(Quiz[QuizIndex])}
-      </Text>
+    <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
+    <View style={{
+      flexDirection: "column", flex:1, padding: 10, backgroundColor: '#171717',
+    }}>
+      <View style={{ flex: 3, backgroundColor: '#171717', alignItems: 'center', justifyContent: 'space-around'}}>
+        <Text>{Quiz[QuizIndex].question}</Text>
+      </View>
+      <View style={{ flex: 2, backgroundColor: "darkorange" }} />
+      <View style={{ flex: 2, backgroundColor: "green" }} />
+      <View style={{ flex: 2, backgroundColor: "blue" }} />
+      <View style={{ flex: 2, backgroundColor: "green" }} />
+    </View>
 
     </View>
     </>
