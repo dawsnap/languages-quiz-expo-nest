@@ -37,7 +37,7 @@ const StartQuiz = ({ route, navigation }) => {
       setQuiz(Quiz);
     };
 
-  if (!response)
+  if (!response || Quiz.length === 0)
   return (
     <>
      <View
