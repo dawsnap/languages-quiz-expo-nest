@@ -25,13 +25,13 @@ const StartQuiz = ({ route, navigation }) => {
 
   if (response && Quiz.length === 0) {
     const Quiz = response.map(question =>{
+      question.wrongAnswers.push({id:question.rightQuestion.id, word:question.rightQuestion.word, correct:true});
       return {
         question : question.rightQuestion.meaning,
         answers: 
-          [{id:question.rightQuestion.id, word:question.rightQuestion.word, right:true},
           question.wrongAnswers.map(answer => {
             return {id:answer.id, word:answer.word}
-          })],
+          }),
         }
       })
       setQuiz(Quiz);
