@@ -5,11 +5,14 @@ const prisma = new PrismaClient();
 
 const load = async () => {
   try {
+    await prisma.languages_words.deleteMany();
+    console.log('Truncated languages_words table');
+
     await prisma.languages.deleteMany();
     console.log('Truncated languages table');
 
-    await prisma.languages_words.deleteMany();
-    console.log('Truncated languages_words table');
+    await prisma.$queryRaw`ALTER SEQUENCE languages_words_id_seq RESTART WITH 1`;
+    console.log('Reset languages table auto_increment to 1');
 
     // Quiz results data should be persisted so it won't be affected by the seeding
 
