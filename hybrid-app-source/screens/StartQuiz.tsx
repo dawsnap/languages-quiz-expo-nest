@@ -4,6 +4,7 @@ import { Text, View } from 'react-native'
 // @ts-ignore
 import {API_REST_URL} from 'react-native-dotenv'
 
+import AnswerButton from '../components/AnswerButton';
 
 const StartQuiz = ({ route, navigation }) => {
 
@@ -62,7 +63,7 @@ const StartQuiz = ({ route, navigation }) => {
         <Text>{Quiz[QuizIndex].question}</Text>
       </View>
       {Quiz[QuizIndex].answers.map(answer => {
-        return <AnswerButton value={answer}/>
+        return <AnswerButton key={answer.id} value={answer}/>
       })}
     </View>
 
