@@ -12,7 +12,7 @@ const StartQuiz = ({ route, navigation }) => {
   const [response, setResponse] = useState(null);
 
   const [Quiz, setQuiz] = useState([]);
-  const [quizAnswers, setQuizAnswers] = useState([]);
+  let QuizIndex = 0;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -57,7 +57,7 @@ const StartQuiz = ({ route, navigation }) => {
     <>
     <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
       <Text>
-        {JSON.stringify(quizQuestions)}
+        {JSON.stringify(Quiz[QuizIndex])}
       </Text>
 
     </View>
