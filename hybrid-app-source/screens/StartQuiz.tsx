@@ -61,10 +61,9 @@ const StartQuiz = ({ route, navigation }) => {
       <View style={{ flex: 3, backgroundColor: '#171717', alignItems: 'center', justifyContent: 'space-around'}}>
         <Text>{Quiz[QuizIndex].question}</Text>
       </View>
-      <View style={{ flex: 2, backgroundColor: "darkorange" }} />
-      <View style={{ flex: 2, backgroundColor: "green" }} />
-      <View style={{ flex: 2, backgroundColor: "blue" }} />
-      <View style={{ flex: 2, backgroundColor: "green" }} />
+      {Quiz[QuizIndex].answers.map(answer => {
+        return <AnswerButton value={answer}/>
+      })}
     </View>
 
     </View>
