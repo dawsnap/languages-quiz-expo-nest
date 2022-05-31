@@ -11,7 +11,7 @@ const StartQuiz = ({ route, navigation }) => {
 
   const [response, setResponse] = useState(null);
 
-  const [quizQuestions, setQuizQuestions] = useState([]);
+  const [Quiz, setQuiz] = useState([]);
   const [quizAnswers, setQuizAnswers] = useState([]);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const StartQuiz = ({ route, navigation }) => {
     fetchData();
   }, []);
 
-  if (response && quizQuestions.length === 0) {
+  if (response && Quiz.length === 0) {
     const Quiz = response.map(question =>{
       return {
         question : question.rightQuestion.meaning,
@@ -34,7 +34,7 @@ const StartQuiz = ({ route, navigation }) => {
           })],
         }
       })
-      setQuizQuestions(Quiz);
+      setQuiz(Quiz);
     };
 
   if (!response)
