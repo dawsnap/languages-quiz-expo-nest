@@ -14,7 +14,8 @@ export class LanguagesController {
   async generateQuizQuestions(@Param() params: any): Promise<any> {
     const { languageId } = params;
     const words = await this.languagesService.getRandomWords(languageId);
-    const quiz = await this.languagesService.generateQuiz(words);
+    const structure = await this.languagesService.generateQuiz(words);
+    const quiz = this.languagesService.checkDuplicates(structure, words);
 
     return quiz;
   }

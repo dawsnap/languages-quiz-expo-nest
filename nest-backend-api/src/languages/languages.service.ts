@@ -48,4 +48,30 @@ export class LanguagesService {
 
     return randomQuizSchema;
   }
+
+  checkDuplicates(quiz: Array<any>, words: Array<any>) {
+    // Deleting ids in right questions so they won't be reassigned if duplicated
+    const rightIds = [];
+    quiz.forEach((question) => rightIds.push(question.rightQuestion.id));
+    const filteredWords = words.filter(function (item) {
+      return rightIds.indexOf(item.id) === -1;
+    });
+
+    const finalQuiz = quiz.map((question) => {
+      return {
+        rightQuestion: question.rightQuestion,
+        wrongAnswers: question.wrongAnswers.map((wrong) => {
+          if (wrong.id === question.rightQuestion.id) {
+            //check if there is any right with a duplicated word in the wrong ones
+            return filteredWords[
+              Math.floor(Math.random() * (words.length - 1))
+            ];
+          }
+          return wrong;
+        }),
+      };
+    });
+
+    return finalQuiz;
+  }
 }
