@@ -20,8 +20,14 @@ const StartQuiz = ({ route, navigation }) => {
     if (QuizIndex < Quiz.length - 1) setQuizIndex(QuizIndex+1);
   }
 
+  const answerIsCorrect = () => {
+    
+  }
+
   const checkAnswer = (answer) => {
-    console.log(answer)
+    if (Quiz[QuizIndex].question.id === answer.value.id) {
+      answerIsCorrect();
+    }
     incrementQuizIndex();
   }
 
