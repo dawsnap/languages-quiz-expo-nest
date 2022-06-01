@@ -5,6 +5,7 @@ import { Text, View } from 'react-native'
 import {API_REST_URL} from 'react-native-dotenv'
 
 import AnswerButton from '../components/AnswerButton';
+import ProgressBar from '../components/ProgressBar';
 
 const StartQuiz = ({ route, navigation }) => {
 
@@ -59,6 +60,7 @@ const StartQuiz = ({ route, navigation }) => {
     <View style={{
       flexDirection: "column", flex:1, backgroundColor: '#171717',
     }}>
+      <ProgressBar quizIndex={QuizIndex} total={Quiz.length}/>
       <View style={{ flex: 3 }}>
         <View style={{
           flex: 5,
