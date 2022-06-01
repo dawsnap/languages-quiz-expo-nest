@@ -61,7 +61,7 @@ const StartQuiz = ({ route, navigation }) => {
 
   if (response && Quiz.length === 0) {
     const Quiz = response.map(question =>{
-      question.wrongAnswers.push({id:question.rightQuestion.id, word:question.rightQuestion.word});
+      question.wrongAnswers.splice(Math.floor(Math.random() * 3), 0, {id:question.rightQuestion.id, word:question.rightQuestion.word});
       return {
         question : {question: question.rightQuestion.meaning, id:question.rightQuestion.id},
         answers: 
