@@ -62,14 +62,17 @@ const StartQuiz = ({ route, navigation }) => {
       <View style={{ flex: 3}}>
         <View style={{
           flex: 4,
-          backgroundColor: '#bfc7d5',
+          backgroundColor: '#bfc7d599',
           alignItems: 'center',
           justifyContent: 'space-around',
           marginHorizontal: 40,
           marginVertical: 80,
           borderRadius: 30,
         }}>
-        <Text>{Quiz[QuizIndex].question}</Text>
+        <Text style={{
+          fontSize: 40
+        }}
+        >{Quiz[QuizIndex].question}</Text>
         </View>
       </View>
       <View style={{ flex: 5, marginBottom: 40, marginHorizontal:20}}>

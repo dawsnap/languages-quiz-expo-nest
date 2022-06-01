@@ -3,17 +3,21 @@ import { View, Text } from "react-native";
 const AnswerButton = (props) => {
     return (
         <View style={{ flex: 2,
-            marginHorizontal:30,
-            marginTop:30,
-            padding: 4,
+            marginHorizontal:35,
+            marginVertical:25,
+            marginTop:20,
             backgroundColor: "#292d3e",
             borderColor:"#000",
-            borderRadius: 30,
+            borderWidth: 2,
+            borderRadius: 50,
             alignItems: 'center',
             justifyContent: 'space-around',
             }}>
 
-        <Text> {JSON.stringify((props.value))}</Text>
+        <Text style={
+            {fontSize: 25, 
+             color: '#bfc7d5'
+            }}> {props.value.word}</Text>
         </View>
 
     )
