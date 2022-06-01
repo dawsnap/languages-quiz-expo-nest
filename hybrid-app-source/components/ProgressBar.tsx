@@ -11,6 +11,13 @@ const ProgressBar = (props) => {
           <View style={{
               marginVertical: 10
           }}>
+            <View style={{
+              width: "50%",
+              backgroundColor: '#bfc7d5',
+              height: 10
+              
+            }}
+            ><Text></Text></View>
           </View>
         </View>
         <View style={{alignItems: 'center', marginTop:15}}>
