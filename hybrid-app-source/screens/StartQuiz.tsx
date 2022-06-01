@@ -57,11 +57,11 @@ const StartQuiz = ({ route, navigation }) => {
     <>
     <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
     <View style={{
-      flexDirection: "column", flex:1, padding: 10, backgroundColor: '#171717',
+      flexDirection: "column", flex:1, backgroundColor: '#171717',
     }}>
-      <View style={{ flex: 3}}>
+      <View style={{ flex: 3 }}>
         <View style={{
-          flex: 4,
+          flex: 5,
           backgroundColor: '#bfc7d599',
           alignItems: 'center',
           justifyContent: 'space-around',

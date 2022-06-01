@@ -77,7 +77,7 @@ const Homescreen = ({ navigation }) => {
             style={{
               marginBottom: 15,
               fontSize: 20,
-              color: 'white',
+              color: '#bfc7d5',
               alignItems: 'center'
             }}
           >{`Selecciona un idioma para comenzar`}</Text>

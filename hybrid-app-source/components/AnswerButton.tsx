@@ -8,7 +8,7 @@ const AnswerButton = (props) => {
             backgroundColor: "#292d3e",
             borderColor:"#000",
             borderWidth: 1.5,
-            borderRadius: 50,
+            borderRadius: 20,
             alignItems: 'center',
             justifyContent: 'space-around',
             }}>
