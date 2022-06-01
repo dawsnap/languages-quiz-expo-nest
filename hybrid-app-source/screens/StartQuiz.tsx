@@ -16,13 +16,19 @@ const StartQuiz = ({ route, navigation }) => {
   const [Quiz, setQuiz] = useState([]);
   const [QuizIndex, setQuizIndex] = useState(0);
   const [seconds, setSeconds] = useState(0);
+  const [score, setScore] = useState(0);
 
   const incrementQuizIndex = () => {
-    if (QuizIndex < Quiz.length - 1) setQuizIndex(QuizIndex+1);
+    if (QuizIndex < Quiz.length - 1) {
+      setQuizIndex(QuizIndex+1);
+    }else{
+    }
+    setSeconds(0);();
   }
 
+
   const answerIsCorrect = () => {
-    
+    setScore(score+seconds)
   }
 
   const checkAnswer = (answer) => {
