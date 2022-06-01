@@ -36,9 +36,9 @@ const StartQuiz = ({ route, navigation }) => {
 
   if (response && Quiz.length === 0) {
     const Quiz = response.map(question =>{
-      question.wrongAnswers.push({id:question.rightQuestion.id, word:question.rightQuestion.word, correct:true});
+      question.wrongAnswers.push({id:question.rightQuestion.id, word:question.rightQuestion.word});
       return {
-        question : question.rightQuestion.meaning,
+        question : {question: question.rightQuestion.meaning, id:question.rightQuestion.id},
         answers: 
           question.wrongAnswers.map(answer => {
             if (answer) return {id:answer.id, word:answer.word}
@@ -59,7 +59,7 @@ const StartQuiz = ({ route, navigation }) => {
         paddingHorizontal: 15
       }}
       >
-      <Text>Cargando....{`${API_REST_URL}`}</Text>
+      <Text>Cargando...{`${API_REST_URL}`}</Text>
     </View>
     </>
   );
@@ -83,7 +83,7 @@ const StartQuiz = ({ route, navigation }) => {
         <Text style={{
           fontSize: 40
         }}
-        >{Quiz[QuizIndex].question}</Text>
+        >{Quiz[QuizIndex].question.question}</Text>
         </View>
       </View>
       <View style={{ flex: 5, marginBottom: 40, marginHorizontal:20}}>
