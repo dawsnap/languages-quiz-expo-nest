@@ -20,6 +20,11 @@ const StartQuiz = ({ route, navigation }) => {
     if (QuizIndex < Quiz.length - 1) setQuizIndex(QuizIndex+1);
   }
 
+  const checkAnswer = (answer) => {
+    console.log(answer)
+    incrementQuizIndex();
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(`${API_REST_URL}/listOfWords/${selectedQuizId}`);
@@ -83,7 +88,7 @@ const StartQuiz = ({ route, navigation }) => {
       </View>
       <View style={{ flex: 5, marginBottom: 40, marginHorizontal:20}}>
       {Quiz[QuizIndex].answers.map(answer => {
-        return <AnswerButton key={answer.id} value={answer}/>
+        return <AnswerButton key={Quiz[QuizIndex].answers.indexOf(answer)} selectAnswerFunc={checkAnswer} value={answer}/>
       })}
       </View>
     </View>
