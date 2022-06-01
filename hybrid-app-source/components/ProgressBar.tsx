@@ -18,15 +18,16 @@ const ProgressBar = (props) => {
   useEffect(() => {
   
      animation.start();
+     restartProgressBar()
 
-  }, [])
+  }, [props.quizIndex])
 
   const restartProgressBar = () => {
     barWidth.setValue(100)
     animation.reset()
     animation.start();
   }
-  
+
 
   progressPercent.addListener((percentage) => {
       
