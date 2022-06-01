@@ -1,6 +1,24 @@
-import { View, Text } from "react-native";
+import { useEffect, useRef, useState } from "react";
+import { View, Text, Animated } from "react-native";
 
 const ProgressBar = (props) => {
+
+  const barWidth = useRef(new Animated.Value(100)).current;
+  const progressPercent = barWidth.interpolate({
+      inputRange: [0, 100],
+      outputRange: ["0%", `100%`],
+  });
+  useEffect(() => {
+  
+      Animated.timing(barWidth, {
+          duration: 8000,
+          toValue: 0,
+          useNativeDriver: false
+      }).start();
+
+
+  }, [])
+  
     return (
         <>
         <View style={{
@@ -11,13 +29,15 @@ const ProgressBar = (props) => {
           <View style={{
               marginVertical: 10
           }}>
-            <View style={{
-              width: "50%",
+            <View 
+            ><Animated.View
+            style={{
+              width: progressPercent,
               backgroundColor: '#bfc7d5',
               height: 10
               
             }}
-            ><Text></Text></View>
+          /></View>
           </View>
         </View>
         <View style={{alignItems: 'center', marginTop:15}}>
