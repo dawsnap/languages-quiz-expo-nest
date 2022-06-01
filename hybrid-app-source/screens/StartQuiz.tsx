@@ -36,7 +36,7 @@ const StartQuiz = ({ route, navigation }) => {
         question : question.rightQuestion.meaning,
         answers: 
           question.wrongAnswers.map(answer => {
-            return {id:answer.id, word:answer.word}
+            if (answer) return {id:answer.id, word:answer.word}
           }),
         }
       })
