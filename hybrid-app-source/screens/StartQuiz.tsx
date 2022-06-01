@@ -23,7 +23,7 @@ const StartQuiz = ({ route, navigation }) => {
       setQuizIndex(QuizIndex+1);
     }else{
     }
-    setSeconds(0);();
+    setSeconds(0);
   }
 
 
