@@ -14,7 +14,11 @@ const StartQuiz = ({ route, navigation }) => {
   const [response, setResponse] = useState(null);
 
   const [Quiz, setQuiz] = useState([]);
-  let QuizIndex = 0;
+  const [QuizIndex, setQuizIndex] = useState(0);
+
+  const incrementQuizIndex = () => {
+    if (QuizIndex < Quiz.length - 1) setQuizIndex(QuizIndex+1);
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -60,7 +64,7 @@ const StartQuiz = ({ route, navigation }) => {
     <View style={{
       flexDirection: "column", flex:1, backgroundColor: '#171717',
     }}>
-      <ProgressBar quizIndex={QuizIndex} total={Quiz.length}/>
+      <ProgressBar incrementQuizIndexFunc={incrementQuizIndex} quizIndex={QuizIndex} total={Quiz.length}/>
       <View style={{ flex: 3 }}>
         <View style={{
           flex: 5,

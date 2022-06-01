@@ -22,7 +22,6 @@ const ProgressBar = (props) => {
   }, [])
 
   const restartProgressBar = () => {
-    console.log(barWidth)
     barWidth.setValue(100)
     animation.reset()
     animation.start();
@@ -33,6 +32,7 @@ const ProgressBar = (props) => {
       
       if (percentage.value  == "0%"){
         restartProgressBar();
+        props.incrementQuizIndexFunc();
       }
   })
   
