@@ -22,6 +22,12 @@ const StartQuiz = ({ route, navigation }) => {
     if (QuizIndex < Quiz.length - 1) {
       setQuizIndex(QuizIndex+1);
     }else{
+      navigation.navigate('Finish',
+          {
+            selectedQuizId: selectedQuizId,
+            score: score
+          })
+      
     }
     setSeconds(0);
   }
