@@ -15,7 +15,7 @@ const StartQuiz = ({ route, navigation }) => {
 
   const [Quiz, setQuiz] = useState([]);
   const [QuizIndex, setQuizIndex] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(10);
   const [score, setScore] = useState(0);
 
   const incrementQuizIndex = () => {
@@ -29,7 +29,7 @@ const StartQuiz = ({ route, navigation }) => {
           })
       
     }
-    setSeconds(0);
+    setSeconds(10);
   }
 
 
@@ -53,7 +53,7 @@ const StartQuiz = ({ route, navigation }) => {
     fetchData();
     if (Quiz){
       const interval = setInterval(() => {
-        setSeconds(seconds => seconds + 0.5);
+        setSeconds(seconds => seconds - 0.5);
       }, 500);
       return () => clearInterval(interval);
     }
