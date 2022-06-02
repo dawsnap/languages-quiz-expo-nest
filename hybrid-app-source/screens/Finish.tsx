@@ -1,7 +1,10 @@
 import { Text, Button, View, Image, SafeAreaView, TextInput } from 'react-native'
 import { useEffect, useState } from 'react';
+// @ts-ignore
+import {API_REST_URL} from 'react-native-dotenv'
 
 import CustomButton from '../components/CustomButton';
+import axios from 'axios';
 
 
 const Finish = ({ route, navigation }) => {
@@ -13,12 +16,21 @@ const Finish = ({ route, navigation }) => {
   useEffect(() => {
   }, []);
 
+  const [response, setResponse] = useState(null)
 
   const saveScore = () => {
-    console.log(selectedQuizId)
-    console.log(score)
-    console.log(rawQuiz)
-    console.log(nickname)
+    const reqBody = {
+      selectedQuizId:selectedQuizId,
+      score:score,
+      rawQuiz:rawQuiz,
+      nickname:nickname
+    }
+    const fetchData = async () => {
+      const response = await axios.post(`${API_REST_URL}/newscore`, reqBody);
+      setResponse(response.data);
+    };
+
+    fetchData();
   };
 
   return (
