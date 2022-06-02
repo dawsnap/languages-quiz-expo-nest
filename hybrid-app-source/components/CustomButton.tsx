@@ -4,6 +4,8 @@ import { View, Text, Pressable } from "react-native";
 const CustomButton = (props) => {
 
     return (
+      <>
+      {!props.hideit && <>
         <Pressable
         style={({ pressed }) => [ {
             backgroundColor: pressed
@@ -27,6 +29,8 @@ const CustomButton = (props) => {
             }}>{props.buttonText}</Text>
         </View>
         </Pressable>
+      </>}
+      </>
     )
 
 }

@@ -97,6 +97,7 @@ const Homescreen = ({ navigation }) => {
         {
           selectedQuizId: value,
         })}
+        hideit={!value}
         buttonText={'Empezar Quiz'}/>
     </SafeAreaView>
     </>
