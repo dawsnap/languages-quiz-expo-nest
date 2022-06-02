@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { PrismaService } from 'src/prisma.service';
 
 @Injectable()
@@ -12,6 +12,7 @@ export class LanguagesService {
       });
     } catch (error) {
       console.log(error);
+      throw new InternalServerErrorException(error);
     }
   }
 
@@ -36,6 +37,7 @@ export class LanguagesService {
       return languages_words;
     } catch (error) {
       console.log(error);
+      throw new InternalServerErrorException(error);
     }
   }
 
@@ -96,6 +98,7 @@ export class LanguagesService {
       });
     } catch (error) {
       console.log(error);
+      throw new InternalServerErrorException(error);
     }
   }
 
@@ -117,6 +120,7 @@ export class LanguagesService {
       });
     } catch (error) {
       console.log(error);
+      throw new InternalServerErrorException(error);
     }
   }
 }
