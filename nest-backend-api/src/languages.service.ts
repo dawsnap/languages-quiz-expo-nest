@@ -6,9 +6,13 @@ export class LanguagesService {
   constructor(private prisma: PrismaService) {}
 
   async getLanguagesList(): Promise<any> {
-    return await this.prisma.languages.findMany({
-      select: { id: true, name: true },
-    });
+    try {
+      return await this.prisma.languages.findMany({
+        select: { id: true, name: true },
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async getRandomWords(lang_id): Promise<any> {
@@ -23,12 +27,16 @@ export class LanguagesService {
       if (idList.indexOf(r) === -1) idList.push(r);
     }
 
-    const languages_words = await this.prisma.languages_words.findMany({
-      select: { id: true, word: true, meaning: true },
-      where: { id: { in: idList } },
-    });
+    try {
+      const languages_words = await this.prisma.languages_words.findMany({
+        select: { id: true, word: true, meaning: true },
+        where: { id: { in: idList } },
+      });
 
-    return languages_words;
+      return languages_words;
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async generateQuiz(words: Array<any>) {
@@ -76,31 +84,39 @@ export class LanguagesService {
   }
 
   async saveNewScore(selectedQuizId, score, rawQuiz, nickname) {
-    return await this.prisma.quiz_results.create({
-      data: {
-        username: nickname,
-        score: score,
-        raw_quiz: rawQuiz,
-        finish_time: undefined,
-        language_id: selectedQuizId,
-      },
-    });
+    try {
+      return await this.prisma.quiz_results.create({
+        data: {
+          username: nickname,
+          score: score,
+          raw_quiz: rawQuiz,
+          finish_time: undefined,
+          language_id: selectedQuizId,
+        },
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async getRankingList(languageId) {
-    return await this.prisma.quiz_results.findMany({
-      select: {
-        id: true,
-        score: true,
-        username: true,
-        finish_time: true,
-      },
-      where: {
-        language_id: Number(languageId),
-      },
-      orderBy: {
-        score: 'desc',
-      },
-    });
+    try {
+      return await this.prisma.quiz_results.findMany({
+        select: {
+          id: true,
+          score: true,
+          username: true,
+          finish_time: true,
+        },
+        where: {
+          language_id: Number(languageId),
+        },
+        orderBy: {
+          score: 'desc',
+        },
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
