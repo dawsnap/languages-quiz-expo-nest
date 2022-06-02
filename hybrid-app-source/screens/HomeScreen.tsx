@@ -83,6 +83,7 @@ const Homescreen = ({ navigation }) => {
             }}
           >{`Selecciona un idioma para comenzar`}</Text>
           <DropDownPicker
+            placeholder='Selecciona un ítem'
             open={open}
             value={value}
             items={items}
