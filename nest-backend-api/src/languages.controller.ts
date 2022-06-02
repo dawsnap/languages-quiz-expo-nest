@@ -1,4 +1,4 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { LanguagesService } from './languages.service';
 
 @Controller()
@@ -18,5 +18,15 @@ export class LanguagesController {
     const quiz = this.languagesService.checkDuplicates(structure, words);
 
     return quiz;
+  }
+
+  @Post('newscore')
+  async saveNewScore(@Body() body): Promise<any> {
+    const { selectedQuizId, score, rawQuiz, nickname } = body;
+    console.log(selectedQuizId);
+    console.log(score);
+    console.log(rawQuiz);
+    console.log(nickname);
+    return 'OK';
   }
 }
