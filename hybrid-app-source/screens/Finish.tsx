@@ -1,6 +1,8 @@
 import { Text, Button, View, Image, SafeAreaView, TextInput } from 'react-native'
 import { useEffect, useState } from 'react';
 
+import CustomButton from '../components/CustomButton';
+
 
 const Finish = ({ route, navigation }) => {
 
@@ -47,6 +49,17 @@ const Finish = ({ route, navigation }) => {
               onChangeText={onChangeNickname}
               value={nickname}
           />
+          <View
+            style={{
+              width:'80%',
+              marginTop: 10
+            }}
+          >
+            <CustomButton 
+             onPress={() =>
+              navigation.navigate('Home')}
+             buttonText={'Volver sin guardar'}/>
+          </View>
         </View>
     </SafeAreaView>
     </>
