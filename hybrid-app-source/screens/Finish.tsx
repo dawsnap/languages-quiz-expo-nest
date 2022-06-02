@@ -26,8 +26,10 @@ const Finish = ({ route, navigation }) => {
       nickname:nickname
     }
     const fetchData = async () => {
-      const response = await axios.post(`${API_REST_URL}/newscore`, reqBody);
-      navigation.navigate('Home')
+      navigation.navigate('ViewRanking',
+      {
+        selectedQuizId: selectedQuizId,
+      })
     };
 
     fetchData();

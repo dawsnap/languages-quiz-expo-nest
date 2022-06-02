@@ -98,7 +98,7 @@ const Homescreen = ({ navigation }) => {
           marginTop:5
         }}>
         <CustomButton 
-        onPress={() => navigation.navigate('Quiz',
+        onPress={() => navigation.navigate('ViewRanking',
         {
           selectedQuizId: value,
         })}

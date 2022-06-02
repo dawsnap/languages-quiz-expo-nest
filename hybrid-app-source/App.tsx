@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen'
 import StartQuiz from './screens/StartQuiz'
 import Finish from './screens/Finish'
+import ViewRanking from './screens/ViewRanking'
 import { Alert, BackHandler } from 'react-native';
 import { useEffect } from 'react';
 
@@ -46,6 +47,10 @@ const App = () => {
         <Stack.Screen
           name="Finish"
           component={Finish}
+        />
+        <Stack.Screen
+          name="ViewRanking"
+          component={ViewRanking}
         />
       </Stack.Navigator>
     </NavigationContainer>
