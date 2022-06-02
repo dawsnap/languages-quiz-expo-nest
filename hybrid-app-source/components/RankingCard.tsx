@@ -4,25 +4,38 @@ import { format } from "date-fns";
 const RankingCard = (props) => {
 
     const { score, index } = props;
-    const date = format(new Date(score.finish_time), "dd/MM/yyyy H:mm");
+    const date = format(new Date(score.finish_time), "dd/MM/yyyy");
 
     return (
         <>
         <View 
             style={{
              backgroundColor:'#bfc7d599',
-             marginVertical: 2,
-             flexDirection: 'row'
+             marginTop: 8,
+             flexDirection: 'row',
+             paddingVertical: 5,
+             borderRadius: 5,
+             justifyContent: 'center',
             }}>
 
         <View style={{
         flex: 0.3,
-        }}><Text>{index + 1}</Text></View>
+        alignItems: 'center',
+        justifyContent: 'center',
+        }}>
+            <Text>{index + 1}</Text>
+        </View>
         <View style={{
           flex: 1.7,
-        }}><Text>{score.username}</Text></View>
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+            <Text>{score.username}</Text>
+        </View>
         <View style={{
           flex: 1.5,
+          alignItems: 'center',
+          justifyContent: 'center',
         }}>
             <Text>{score.score} puntos</Text>
             <Text>{date}</Text>
