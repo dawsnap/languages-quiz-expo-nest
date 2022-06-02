@@ -92,6 +92,19 @@ const Homescreen = ({ navigation }) => {
             setItems={setItems}
             theme="DARK"
           />
+        <View
+        style={{
+          width:'50%',
+          marginTop:5
+        }}>
+        <CustomButton 
+        onPress={() => navigation.navigate('Quiz',
+        {
+          selectedQuizId: value,
+        })}
+        hideit={!value}
+        buttonText={'Ver ránking'}/>
+        </View>
         </View>
         <CustomButton 
         onPress={() => navigation.navigate('Quiz',
