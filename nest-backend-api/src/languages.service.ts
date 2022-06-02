@@ -98,6 +98,9 @@ export class LanguagesService {
       where: {
         language_id: Number(languageId),
       },
+      orderBy: {
+        score: 'desc',
+      },
     });
   }
 }
