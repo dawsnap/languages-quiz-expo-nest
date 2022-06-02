@@ -7,6 +7,7 @@ import Finish from './screens/Finish'
 import ViewRanking from './screens/ViewRanking'
 import { Alert, BackHandler } from 'react-native';
 import { useEffect } from 'react';
+import { ToastProvider } from 'react-native-toast-notifications'
 
 const Stack = createNativeStackNavigator();
 
@@ -34,6 +35,7 @@ const App = () => {
   }, []);
   
   return (
+    <ToastProvider>
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false, gestureEnabled:false}}>
         <Stack.Screen
@@ -54,6 +56,7 @@ const App = () => {
         />
       </Stack.Navigator>
     </NavigationContainer>
+    </ToastProvider>
   );
 }
 
