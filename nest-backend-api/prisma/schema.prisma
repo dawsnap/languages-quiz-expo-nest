@@ -14,7 +14,6 @@ model languages {
   id              Int               @id
   name            String            @unique
   languages_words languages_words[]
-  quiz_results    quiz_results[]
 }
 
 model languages_words {
@@ -33,7 +32,5 @@ model quiz_results {
   username    String
   raw_quiz    Json
   score       Int
-
-  language languages @relation(fields: [language_id], references: [id], onDelete: NoAction)
 
 }
