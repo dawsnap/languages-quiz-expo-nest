@@ -17,7 +17,8 @@ const CustomButton = (props) => {
             justifyContent: 'space-around',
             paddingTop: 15,
             paddingBottom: 15,
-            marginBottom: 20
+            marginBottom: 20,
+            borderRadius:5
             
           }]}
           
