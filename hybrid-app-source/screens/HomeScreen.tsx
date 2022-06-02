@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import {API_REST_URL} from 'react-native-dotenv'
 import DropDownPicker from 'react-native-dropdown-picker';
 import axios from 'axios';
+import CustomButton from '../components/CustomButton';
 
 const getImage  = (language) => {
   switch (language) {
@@ -91,14 +92,12 @@ const Homescreen = ({ navigation }) => {
             theme="DARK"
           />
         </View>
-        <Button
-          disabled = { value ? false : true }
-          title={`Empezar Quiz`}
-          onPress={() => navigation.navigate('Quiz',
-          {
-            selectedQuizId: value,
-          })}
-        />
+        <CustomButton 
+        onPress={() => navigation.navigate('Quiz',
+        {
+          selectedQuizId: value,
+        })}
+        buttonText={'Empezar Quiz'}/>
     </SafeAreaView>
     </>
   );
