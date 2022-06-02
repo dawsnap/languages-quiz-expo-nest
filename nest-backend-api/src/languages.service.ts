@@ -74,4 +74,16 @@ export class LanguagesService {
 
     return finalQuiz;
   }
+
+  async saveNewScore(selectedQuizId, score, rawQuiz, nickname) {
+    await this.prisma.quiz_results.create({
+      data: {
+        username: nickname,
+        score: score,
+        raw_quiz: JSON.parse(rawQuiz),
+        finish_time: null,
+        language_id: selectedQuizId,
+      },
+    });
+  }
 }

@@ -23,10 +23,12 @@ export class LanguagesController {
   @Post('newscore')
   async saveNewScore(@Body() body): Promise<any> {
     const { selectedQuizId, score, rawQuiz, nickname } = body;
-    console.log(selectedQuizId);
-    console.log(score);
-    console.log(rawQuiz);
-    console.log(nickname);
+    this.languagesService.saveNewScore(
+      selectedQuizId,
+      score,
+      rawQuiz,
+      nickname,
+    );
     return 'OK';
   }
 }
