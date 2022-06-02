@@ -15,11 +15,14 @@ const CustomButton = (props) => {
             borderWidth: 1,
             alignItems: 'center',
             justifyContent: 'space-around',
-            paddingTop: 20,
-            paddingBottom: 20
+            paddingTop: 15,
+            paddingBottom: 15,
+            marginBottom: 20
             
           }]}
+          
           onPress={props.onPress}
+          
         >
         <View>
 

@@ -56,6 +56,10 @@ const Finish = ({ route, navigation }) => {
             }}
           >
             <CustomButton 
+             onPress={saveScore}
+             buttonText={'Guardar puntuación'}/>
+
+            <CustomButton 
              onPress={() =>
               navigation.navigate('Home')}
              buttonText={'Volver sin guardar'}/>
