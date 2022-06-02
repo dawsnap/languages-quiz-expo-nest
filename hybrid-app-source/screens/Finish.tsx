@@ -1,10 +1,12 @@
-import { Text, Button, View, Image, SafeAreaView } from 'react-native'
+import { Text, Button, View, Image, SafeAreaView, TextInput } from 'react-native'
 import { useEffect, useState } from 'react';
 
 
 const Finish = ({ route, navigation }) => {
 
   const { score, languagId } = route.params;
+
+  const [nickname, onChangeNickname] = useState(null)
 
   useEffect(() => {
   }, []);
@@ -33,6 +35,18 @@ const Finish = ({ route, navigation }) => {
               alignItems: 'center'
             }}
           >Tu puntuación es de {score} puntos</Text>
+          <TextInput
+            style={{  
+              marginTop: 55,
+              height: 40,
+              width:'100%',
+              backgroundColor: 'white',
+              borderWidth: 1,
+              padding: 10,}}
+              placeholder="Introduce un nickname para guardar tu puntuación"
+              onChangeText={onChangeNickname}
+              value={nickname}
+          />
         </View>
     </SafeAreaView>
     </>
