@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import {API_REST_URL} from 'react-native-dotenv'
 
 import axios from 'axios';
+import RankingCard from '../components/RankingCard';
+import CustomButton from '../components/CustomButton';
 
 
 const ViewRanking = ({ route, navigation }) => {
