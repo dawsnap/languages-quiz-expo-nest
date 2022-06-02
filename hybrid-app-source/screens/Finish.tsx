@@ -27,7 +27,7 @@ const Finish = ({ route, navigation }) => {
     }
     const fetchData = async () => {
       const response = await axios.post(`${API_REST_URL}/newscore`, reqBody);
-      setResponse(response.data);
+      navigation.navigate('Home')
     };
 
     fetchData();
