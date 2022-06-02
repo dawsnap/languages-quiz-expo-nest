@@ -6,12 +6,20 @@ import CustomButton from '../components/CustomButton';
 
 const Finish = ({ route, navigation }) => {
 
-  const { score, languagId } = route.params;
+  const { selectedQuizId, score, rawQuiz } = route.params;
 
   const [nickname, onChangeNickname] = useState(null)
 
   useEffect(() => {
   }, []);
+
+
+  const saveScore = () => {
+    console.log(selectedQuizId)
+    console.log(score)
+    console.log(rawQuiz)
+    console.log(nickname)
+  };
 
   return (
     <>

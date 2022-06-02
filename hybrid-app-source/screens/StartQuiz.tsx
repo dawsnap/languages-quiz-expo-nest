@@ -25,7 +25,8 @@ const StartQuiz = ({ route, navigation }) => {
       navigation.navigate('Finish',
           {
             selectedQuizId: selectedQuizId,
-            score: score
+            score: score,
+            rawQuiz: Quiz
           })
       
     }
