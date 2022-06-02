@@ -6,6 +6,7 @@ import {API_REST_URL} from 'react-native-dotenv'
 
 import AnswerButton from '../components/AnswerButton';
 import ProgressBar from '../components/ProgressBar';
+import { useToast } from "react-native-toast-notifications";
 
 const StartQuiz = ({ route, navigation }) => {
 
@@ -17,6 +18,8 @@ const StartQuiz = ({ route, navigation }) => {
   const [QuizIndex, setQuizIndex] = useState(0);
   const [seconds, setSeconds] = useState(10);
   const [score, setScore] = useState(0);
+
+  const toast = useToast();
 
   const incrementQuizIndex = () => {
     if (QuizIndex < Quiz.length - 1) {
@@ -35,12 +38,23 @@ const StartQuiz = ({ route, navigation }) => {
 
 
   const answerIsCorrect = () => {
+    toast.show("¡Correcto!", {
+      type: "success",
+      placement: "bottom",
+      duration: 700,
+    });
     setScore(score+seconds)
   }
 
   const checkAnswer = (answer) => {
     if (Quiz[QuizIndex].question.id === answer.value.id) {
       answerIsCorrect();
+    }else{
+      toast.show("Incorrecto", {
+        type: "danger",
+        placement: "bottom",
+        duration: 700,
+      });
     }
     incrementQuizIndex();
   }
