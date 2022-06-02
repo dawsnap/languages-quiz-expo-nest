@@ -80,8 +80,8 @@ export class LanguagesService {
       data: {
         username: nickname,
         score: score,
-        raw_quiz: JSON.parse(rawQuiz),
-        finish_time: null,
+        raw_quiz: rawQuiz,
+        finish_time: undefined,
         language_id: selectedQuizId,
       },
     });
