@@ -9,6 +9,8 @@ const AnswerButton = (props) => {
 
 
     return (
+        <>
+        {props.value && <>
         <Pressable
         style={({ pressed }) => [ {
             backgroundColor: pressed
@@ -27,11 +29,13 @@ const AnswerButton = (props) => {
         <View>
 
         <Text style={
-            {fontSize: 25, 
+            {fontSize: 20, 
              color: '#bfc7d5'
             }}> {props.value.word}</Text>
         </View>
         </Pressable>
+        </>}
+        </>
     )
 
 }
