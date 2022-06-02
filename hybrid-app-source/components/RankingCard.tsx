@@ -1,8 +1,10 @@
-import { View, Text, Pressable } from "react-native";
+import { View, Text } from "react-native";
+import { format } from "date-fns";
 
 const RankingCard = (props) => {
 
     const { score, index } = props;
+    const date = format(new Date(score.finish_time), "dd/MM/yyyy H:mm");
 
     return (
         <>
@@ -23,7 +25,7 @@ const RankingCard = (props) => {
           flex: 1.5,
         }}>
             <Text>{score.score} puntos</Text>
-            <Text>{score.finish_time}</Text>
+            <Text>{date}</Text>
         </View>
         </View>
         </>
