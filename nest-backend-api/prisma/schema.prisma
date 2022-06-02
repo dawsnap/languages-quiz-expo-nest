@@ -29,7 +29,7 @@ model languages_words {
 model quiz_results {
   id          Int      @id @default(autoincrement())
   language_id Int
-  finish_time DateTime
+  finish_time DateTime @default(now())
   username    String
   raw_quiz    Json
   score       Int
