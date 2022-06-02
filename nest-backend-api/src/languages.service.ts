@@ -76,7 +76,7 @@ export class LanguagesService {
   }
 
   async saveNewScore(selectedQuizId, score, rawQuiz, nickname) {
-    await this.prisma.quiz_results.create({
+    return await this.prisma.quiz_results.create({
       data: {
         username: nickname,
         score: score,
