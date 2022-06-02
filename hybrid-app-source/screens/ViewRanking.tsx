@@ -1,4 +1,4 @@
-import { Text, SafeAreaView } from 'react-native'
+import { Text, View, SafeAreaView, ScrollView } from 'react-native'
 import { useEffect, useState } from 'react';
 // @ts-ignore
 import {API_REST_URL} from 'react-native-dotenv'
@@ -22,7 +22,21 @@ const ViewRanking = ({ route, navigation }) => {
 
   }, []);
 
-
+  if (!response)
+    return (
+      <>
+       <View
+        style={{
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingHorizontal: 15
+        }}
+        >
+        <Text>Cargando....{`${API_REST_URLLOCALL}/viewRanking`}</Text>
+      </View>
+      </>
+    );
   return (
     <>
     <SafeAreaView
