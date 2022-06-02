@@ -44,6 +44,15 @@ const ViewRanking = ({ route, navigation }) => {
         flex:1,
         backgroundColor: '#171717'
       }}>
+      <ScrollView>
+      {response.map(score => {
+        return <RankingCard key={response.indexOf(score)} index={response.indexOf(score)} score={score}/>
+      })}
+      </ScrollView>
+      <CustomButton 
+             onPress={() =>
+              navigation.navigate('Home')}
+             buttonText={'Cerrar'}/>
         
     </SafeAreaView>
     </>
