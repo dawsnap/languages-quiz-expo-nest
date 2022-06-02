@@ -31,6 +31,6 @@ model quiz_results {
   finish_time DateTime @default(now())
   username    String
   raw_quiz    Json
-  score       Int
+  score       Float
 
 }
