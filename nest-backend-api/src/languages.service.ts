@@ -86,4 +86,18 @@ export class LanguagesService {
       },
     });
   }
+
+  async getRankingList(languageId) {
+    return await this.prisma.quiz_results.findMany({
+      select: {
+        id: true,
+        score: true,
+        username: true,
+        finish_time: true,
+      },
+      where: {
+        language_id: Number(languageId),
+      },
+    });
+  }
 }

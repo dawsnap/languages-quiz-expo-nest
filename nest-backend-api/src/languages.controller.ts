@@ -31,4 +31,12 @@ export class LanguagesController {
     );
     return 'OK';
   }
+
+  @Get('viewRanking/:languageId')
+  async viewRanking(@Param() params: any): Promise<any> {
+    const { languageId } = params;
+    const rankingArray = await this.languagesService.getRankingList(languageId);
+
+    return rankingArray;
+  }
 }
