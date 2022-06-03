@@ -39,4 +39,9 @@ export class LanguagesController {
 
     return rankingArray;
   }
+
+  @Get('')
+  async health(): Promise<any> {
+    return 'La API Rest funciona!';
+  }
 }
