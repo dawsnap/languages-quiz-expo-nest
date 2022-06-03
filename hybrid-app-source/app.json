@@ -30,6 +30,8 @@
     "platforms": [
       "ios",
       "android"
-    ]
+    ],
+    "description": "",
+    "githubUrl": "https://github.com/dawsnap/languages-quiz-expo-nest"
   }
 }
