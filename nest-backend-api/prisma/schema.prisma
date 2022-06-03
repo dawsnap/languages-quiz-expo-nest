@@ -29,7 +29,7 @@ model quiz_results {
   id          Int      @id @default(autoincrement())
   language_id Int
   finish_time DateTime @default(now())
-  username    String
+  username    String   @default("Sin nombre")
   raw_quiz    Json
   score       Float
 
