@@ -10,7 +10,7 @@ const ProgressBar = (props) => {
   });
 
   const animation = Animated.timing(barWidth, {
-    duration: 8000,
+    duration: 10000,
     toValue: 0,
     useNativeDriver: false
 })
