@@ -87,6 +87,7 @@ export class LanguagesService {
 
   async saveNewScore(selectedQuizId, score, rawQuiz, nickname) {
     try {
+      if (!nickname) nickname = 'Sin nombre';
       return await this.prisma.quiz_results.create({
         data: {
           username: nickname,
