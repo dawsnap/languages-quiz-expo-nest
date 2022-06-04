@@ -1279,4 +1279,1284 @@ export const languages_words = [
     word: 'Sauce',
     meaning: 'Salsa',
   },
+  {
+    language_id: 2,
+    word: 'Feuille',
+    meaning: 'Hoja',
+  },
+  {
+    language_id: 2,
+    word: 'chenille',
+    meaning: 'Gusano de seda',
+  },
+  {
+    language_id: 2,
+    word: 'Table de chevet',
+    meaning: 'Mesita de noche',
+  },
+  {
+    language_id: 2,
+    word: 'Chouette',
+    meaning: 'Lechuza',
+  },
+  {
+    language_id: 2,
+    word: 'Vide',
+    meaning: 'Aspirador',
+  },
+  {
+    language_id: 2,
+    word: 'Rive',
+    meaning: 'Orilla',
+  },
+  {
+    language_id: 2,
+    word: 'Humidité',
+    meaning: 'Humedad',
+  },
+  {
+    language_id: 2,
+    word: 'Peindre',
+    meaning: 'Pintura',
+  },
+  {
+    language_id: 2,
+    word: 'Chauffeur',
+    meaning: 'Chofer',
+  },
+  {
+    language_id: 2,
+    word: 'Rhinocéros',
+    meaning: 'Rinoceronte',
+  },
+  {
+    language_id: 2,
+    word: 'Chambre',
+    meaning: 'Dormitorio',
+  },
+  {
+    language_id: 2,
+    word: 'Jupe',
+    meaning: 'Falda',
+  },
+  {
+    language_id: 2,
+    word: 'Poivrière',
+    meaning: 'Pimentero',
+  },
+  {
+    language_id: 2,
+    word: 'Corne',
+    meaning: 'Cláxon',
+  },
+  {
+    language_id: 2,
+    word: 'Meubles',
+    meaning: 'Muebles',
+  },
+  {
+    language_id: 2,
+    word: 'Tournevis',
+    meaning: 'Destornillador',
+  },
+  {
+    language_id: 2,
+    word: 'Turquie',
+    meaning: 'Pavo',
+  },
+  {
+    language_id: 2,
+    word: 'Colibri',
+    meaning: 'Colibrí',
+  },
+  {
+    language_id: 2,
+    word: 'Araignée',
+    meaning: 'Araña',
+  },
+  {
+    language_id: 2,
+    word: 'Perroquet',
+    meaning: 'Loro',
+  },
+  {
+    language_id: 2,
+    word: 'Avocat',
+    meaning: 'Aguacate',
+  },
+  {
+    language_id: 2,
+    word: 'Écureuil',
+    meaning: 'Ardilla',
+  },
+  {
+    language_id: 2,
+    word: 'Salade',
+    meaning: 'Lechuga',
+  },
+  {
+    language_id: 2,
+    word: 'Coton',
+    meaning: 'Algodón',
+  },
+  {
+    language_id: 2,
+    word: 'Pot',
+    meaning: 'Caldero',
+  },
+  {
+    language_id: 2,
+    word: 'Lézard',
+    meaning: 'Lagarto',
+  },
+  {
+    language_id: 2,
+    word: 'Inondation',
+    meaning: 'Inundación',
+  },
+  {
+    language_id: 2,
+    word: 'Pâtisserie',
+    meaning: 'Panadería',
+  },
+  {
+    language_id: 2,
+    word: 'Tambouriner',
+    meaning: 'Tambor',
+  },
+  {
+    language_id: 2,
+    word: 'Paiement',
+    meaning: 'Pago',
+  },
+  {
+    language_id: 2,
+    word: 'Méchant',
+    meaning: 'Malvado',
+  },
+  {
+    language_id: 2,
+    word: 'Discret',
+    meaning: 'Discreto',
+  },
+  {
+    language_id: 2,
+    word: 'Rester',
+    meaning: 'Permanecer',
+  },
+  {
+    language_id: 2,
+    word: 'Parfum',
+    meaning: 'Aroma',
+  },
+  {
+    language_id: 2,
+    word: 'Effrayant',
+    meaning: 'Escalofriante',
+  },
+  {
+    language_id: 2,
+    word: 'Sans défaut',
+    meaning: 'Impecable',
+  },
+  {
+    language_id: 2,
+    word: 'Éternuement',
+    meaning: 'Estornudar',
+  },
+  {
+    language_id: 2,
+    word: 'Échanger',
+    meaning: 'Comerciar',
+  },
+  {
+    language_id: 2,
+    word: 'Conséquences',
+    meaning: 'Secuelas',
+  },
+  {
+    language_id: 2,
+    word: 'Encombré',
+    meaning: 'Desordenado',
+  },
+  {
+    language_id: 2,
+    word: 'Sortant',
+    meaning: 'Extrovertido',
+  },
+  {
+    language_id: 2,
+    word: 'Rassembler',
+    meaning: 'Recolectar',
+  },
+  {
+    language_id: 2,
+    word: 'Tranchant',
+    meaning: 'Puntiagudo',
+  },
+  {
+    language_id: 2,
+    word: 'Joindre',
+    meaning: 'Adjuntar',
+  },
+  {
+    language_id: 2,
+    word: 'Bénir',
+    meaning: 'Bendecir',
+  },
+  {
+    language_id: 2,
+    word: 'Éveillé',
+    meaning: 'Despierto',
+  },
+  {
+    language_id: 2,
+    word: 'Réellement',
+    meaning: 'Realmente',
+  },
+  {
+    language_id: 2,
+    word: 'Paresseux',
+    meaning: 'Perezoso',
+  },
+  {
+    language_id: 2,
+    word: 'Douleur',
+    meaning: 'Duelo',
+  },
+  {
+    language_id: 2,
+    word: 'Se concentrer',
+    meaning: 'Enfocar',
+  },
+  {
+    language_id: 2,
+    word: 'Diluer',
+    meaning: 'Diluir',
+  },
+  {
+    language_id: 2,
+    word: 'Bien',
+    meaning: 'Multa',
+  },
+  {
+    language_id: 2,
+    word: 'Efficace',
+    meaning: 'Efectivo',
+  },
+  {
+    language_id: 2,
+    word: 'Consacrer',
+    meaning: 'Dedicar',
+  },
+  {
+    language_id: 2,
+    word: 'Absence',
+    meaning: 'Ausencia',
+  },
+  {
+    language_id: 2,
+    word: 'Améliorer',
+    meaning: 'Mejorar',
+  },
+  {
+    language_id: 2,
+    word: 'Piqûre',
+    meaning: 'Picadura',
+  },
+  {
+    language_id: 2,
+    word: 'Consommateur',
+    meaning: 'Consumidor',
+  },
+  {
+    language_id: 2,
+    word: 'Remarque',
+    meaning: 'Observación',
+  },
+  {
+    language_id: 2,
+    word: 'Usine',
+    meaning: 'Fábrica',
+  },
+  {
+    language_id: 2,
+    word: 'La mesure',
+    meaning: 'Medición',
+  },
+  {
+    language_id: 2,
+    word: 'Aimer',
+    meaning: 'Amor',
+  },
+  {
+    language_id: 2,
+    word: 'Mélange',
+    meaning: 'Mezcla',
+  },
+  {
+    language_id: 2,
+    word: `L'écriture`,
+    meaning: 'Escritura',
+  },
+  {
+    language_id: 2,
+    word: 'Agriculteur',
+    meaning: 'Granjero',
+  },
+  {
+    language_id: 2,
+    word: 'Sang',
+    meaning: 'Sangre',
+  },
+  {
+    language_id: 2,
+    word: 'Joue',
+    meaning: 'Mejilla',
+  },
+  {
+    language_id: 2,
+    word: 'Chemise',
+    meaning: 'Camisa',
+  },
+  {
+    language_id: 2,
+    word: 'La faiblesse',
+    meaning: 'Debilidad',
+  },
+  {
+    language_id: 2,
+    word: 'Bifteck',
+    meaning: 'Filete',
+  },
+  {
+    language_id: 2,
+    word: 'Signature',
+    meaning: 'Firma',
+  },
+  {
+    language_id: 2,
+    word: 'Acheteur',
+    meaning: 'Comprador',
+  },
+  {
+    language_id: 2,
+    word: 'Souhaiter',
+    meaning: 'Deseo',
+  },
+  {
+    language_id: 2,
+    word: 'Réveillez-vous',
+    meaning: 'Despertar',
+  },
+  {
+    language_id: 2,
+    word: 'Pense',
+    meaning: 'Pensar',
+  },
+  {
+    language_id: 2,
+    word: `S'excuser`,
+    meaning: 'Disculparse',
+  },
+  {
+    language_id: 2,
+    word: 'Erreur',
+    meaning: 'Error',
+  },
+  {
+    language_id: 2,
+    word: 'Myrtille',
+    meaning: 'Arándano',
+  },
+  {
+    language_id: 2,
+    word: 'Mon chéri',
+    meaning: 'Miel',
+  },
+  {
+    language_id: 2,
+    word: 'Phrase',
+    meaning: 'Frase',
+  },
+  {
+    language_id: 2,
+    word: 'Triste',
+    meaning: 'Triste',
+  },
+  {
+    language_id: 2,
+    word: 'Chapitre',
+    meaning: 'Capítulo',
+  },
+  {
+    language_id: 2,
+    word: 'Ail',
+    meaning: 'Ajo',
+  },
+  {
+    language_id: 2,
+    word: 'Orage',
+    meaning: 'Tormenta eléctrica',
+  },
+  {
+    language_id: 2,
+    word: 'Crème glacée',
+    meaning: 'Helado',
+  },
+  {
+    language_id: 2,
+    word: 'Placard',
+    meaning: 'Armario',
+  },
+  {
+    language_id: 2,
+    word: 'Portable',
+    meaning: 'Ordenador portátil',
+  },
+  {
+    language_id: 2,
+    word: 'Chanteuse',
+    meaning: 'Cantante',
+  },
+  {
+    language_id: 2,
+    word: 'Cerf',
+    meaning: 'Ciervo',
+  },
+  {
+    language_id: 2,
+    word: 'Dernier',
+    meaning: 'Último',
+  },
+  {
+    language_id: 2,
+    word: 'Rejeter',
+    meaning: 'Rechazar',
+  },
+  {
+    language_id: 2,
+    word: 'Frère',
+    meaning: 'Hermano',
+  },
+  {
+    language_id: 2,
+    word: 'Échouer',
+    meaning: 'Fallar',
+  },
+  {
+    language_id: 2,
+    word: 'Se balancer',
+    meaning: 'Balanceo',
+  },
+  {
+    language_id: 2,
+    word: 'Salé',
+    meaning: 'Salado',
+  },
+  {
+    language_id: 2,
+    word: 'Sucre',
+    meaning: 'Azúcar',
+  },
+  {
+    language_id: 2,
+    word: 'Changer',
+    meaning: 'Cambiar',
+  },
+  {
+    language_id: 2,
+    word: 'Le sourire',
+    meaning: 'Sonrisa',
+  },
+  {
+    language_id: 2,
+    word: 'Confiance',
+    meaning: 'Confiar',
+  },
+  {
+    language_id: 2,
+    word: 'Attendre',
+    meaning: 'Esperar',
+  },
+  {
+    language_id: 2,
+    word: 'Retirer',
+    meaning: 'Quitar',
+  },
+  {
+    language_id: 2,
+    word: 'Casquette',
+    meaning: 'Gorra',
+  },
+  {
+    language_id: 2,
+    word: 'Faire semblant',
+    meaning: 'Fingir',
+  },
+  {
+    language_id: 2,
+    word: 'Bien rangé',
+    meaning: 'Ordenado',
+  },
+  {
+    language_id: 2,
+    word: 'Aveugle',
+    meaning: 'Ciego',
+  },
+  {
+    language_id: 2,
+    word: 'Cravate',
+    meaning: 'Corbata',
+  },
+  {
+    language_id: 2,
+    word: 'Spectacle',
+    meaning: 'Enseñar',
+  },
+  {
+    language_id: 2,
+    word: 'Chaussure',
+    meaning: 'Zapato',
+  },
+  {
+    language_id: 2,
+    word: 'Gencive',
+    meaning: 'Goma',
+  },
+  {
+    language_id: 2,
+    word: 'Chewing-gum',
+    meaning: 'Chicle',
+  },
+  {
+    language_id: 2,
+    word: 'Verre',
+    meaning: 'Cristal',
+  },
+  {
+    language_id: 2,
+    word: 'Bois',
+    meaning: 'Madera',
+  },
+  {
+    language_id: 2,
+    word: `Clin d'œil`,
+    meaning: 'Guiño',
+  },
+  {
+    language_id: 2,
+    word: 'Cadeau',
+    meaning: 'Regalo',
+  },
+  {
+    language_id: 2,
+    word: 'Défi',
+    meaning: 'Desafío',
+  },
+  {
+    language_id: 2,
+    word: 'Protéger',
+    meaning: 'Proteger',
+  },
+  {
+    language_id: 2,
+    word: 'Rappelles toi',
+    meaning: 'Recordar',
+  },
+  {
+    language_id: 2,
+    word: 'Manquer',
+    meaning: 'Perder',
+  },
+  {
+    language_id: 2,
+    word: 'Chaud',
+    meaning: 'Caliente',
+  },
+  {
+    language_id: 2,
+    word: 'Abri',
+    meaning: 'Refugio',
+  },
+  {
+    language_id: 2,
+    word: 'Impressionnant',
+    meaning: 'Alucinante',
+  },
+  {
+    language_id: 2,
+    word: 'Endormi',
+    meaning: 'Dormido',
+  },
+  {
+    language_id: 2,
+    word: 'Honteux',
+    meaning: 'Avergonzado',
+  },
+  {
+    language_id: 2,
+    word: 'Emprunter',
+    meaning: 'Tomar prestado',
+  },
+  {
+    language_id: 2,
+    word: 'Grossier',
+    meaning: 'Grosero',
+  },
+  {
+    language_id: 2,
+    word: 'Ville',
+    meaning: 'Pueblo',
+  },
+  {
+    language_id: 2,
+    word: 'Voir',
+    meaning: 'Mirar',
+  },
+  {
+    language_id: 2,
+    word: 'Mousse',
+    meaning: 'Espuma',
+  },
+  {
+    language_id: 2,
+    word: 'Planche',
+    meaning: 'Tablero',
+  },
+  {
+    language_id: 2,
+    word: 'Couper',
+    meaning: 'Cortar',
+  },
+  {
+    language_id: 2,
+    word: `File d'attente`,
+    meaning: 'Cola',
+  },
+  {
+    language_id: 2,
+    word: 'Remuer',
+    meaning: 'Remover',
+  },
+  {
+    language_id: 2,
+    word: 'Droits',
+    meaning: 'Derechos',
+  },
+  {
+    language_id: 2,
+    word: 'La gauche',
+    meaning: 'Izquierda',
+  },
+  {
+    language_id: 2,
+    word: 'Briller',
+    meaning: 'Brillo',
+  },
+  {
+    language_id: 2,
+    word: 'Soutien',
+    meaning: 'Apoyo',
+  },
+  {
+    language_id: 2,
+    word: 'Incapable',
+    meaning: 'Incapaz',
+  },
+  {
+    language_id: 2,
+    word: 'Rester',
+    meaning: 'Quedarse',
+  },
+  {
+    language_id: 2,
+    word: 'Se retirer',
+    meaning: 'Jubilarse',
+  },
+  {
+    language_id: 2,
+    word: 'Veine',
+    meaning: 'Vena',
+  },
+  {
+    language_id: 2,
+    word: 'Fier',
+    meaning: 'Orgullo',
+  },
+  {
+    language_id: 2,
+    word: 'Mauvais',
+    meaning: 'Erróneo',
+  },
+  {
+    language_id: 2,
+    word: 'Dette',
+    meaning: 'Deuda',
+  },
+  {
+    language_id: 2,
+    word: 'De valeur',
+    meaning: 'Valioso',
+  },
+  {
+    language_id: 2,
+    word: 'Irritant',
+    meaning: 'Molesto',
+  },
+  {
+    language_id: 2,
+    word: 'Sans valeur',
+    meaning: 'Sin valor',
+  },
+  {
+    language_id: 2,
+    word: 'Annoncer',
+    meaning: 'Anunciar',
+  },
+  {
+    language_id: 2,
+    word: 'Décès',
+    meaning: 'Muerte',
+  },
+  {
+    language_id: 2,
+    word: 'Match',
+    meaning: 'Cerilla',
+  },
+  {
+    language_id: 2,
+    word: 'Sensationnel',
+    meaning: 'Maravilloso',
+  },
+  {
+    language_id: 2,
+    word: 'La douleur',
+    meaning: 'Dolor',
+  },
+  {
+    language_id: 2,
+    word: 'Commun',
+    meaning: 'Común',
+  },
+  {
+    language_id: 2,
+    word: 'Différent',
+    meaning: 'Diluir',
+  },
+  {
+    language_id: 2,
+    word: 'Assorti',
+    meaning: 'Clasificado',
+  },
+  {
+    language_id: 2,
+    word: 'Amer',
+    meaning: 'Amargo',
+  },
+  {
+    language_id: 2,
+    word: 'Sucré',
+    meaning: 'Dulce',
+  },
+  {
+    language_id: 2,
+    word: 'Objectif',
+    meaning: 'Objetivo',
+  },
+  {
+    language_id: 2,
+    word: 'Odieux',
+    meaning: 'Odioso',
+  },
+  {
+    language_id: 2,
+    word: 'Debout',
+    meaning: 'De pie',
+  },
+  {
+    language_id: 2,
+    word: 'Langue',
+    meaning: 'Lengua',
+  },
+  {
+    language_id: 2,
+    word: 'Guerre',
+    meaning: 'Guerra',
+  },
+  {
+    language_id: 2,
+    word: 'Secouer',
+    meaning: 'Agitar',
+  },
+  {
+    language_id: 2,
+    word: 'Pollution',
+    meaning: 'Contaminación',
+  },
+  {
+    language_id: 2,
+    word: 'Dîner',
+    meaning: 'Cena',
+  },
+  {
+    language_id: 2,
+    word: 'Ronfler',
+    meaning: 'Roncar',
+  },
+  {
+    language_id: 2,
+    word: 'Torche',
+    meaning: 'Linterna',
+  },
+  {
+    language_id: 2,
+    word: 'Œil',
+    meaning: 'Ojo',
+  },
+  {
+    language_id: 2,
+    word: 'Scape',
+    meaning: 'Escapar',
+  },
+  {
+    language_id: 2,
+    word: 'Télécharger',
+    meaning: 'Descargar',
+  },
+  {
+    language_id: 2,
+    word: 'Se maquiller',
+    meaning: 'Maquillaje',
+  },
+  {
+    language_id: 2,
+    word: 'Pâtisserie',
+    meaning: 'Panadería',
+  },
+  {
+    language_id: 2,
+    word: 'Aider',
+    meaning: 'Ayudar',
+  },
+  {
+    language_id: 2,
+    word: 'Pêche',
+    meaning: 'Fish',
+  },
+  {
+    language_id: 2,
+    word: 'Fâché',
+    meaning: 'Enfadado',
+  },
+  {
+    language_id: 2,
+    word: 'Lumière',
+    meaning: 'Luz',
+  },
+  {
+    language_id: 2,
+    word: 'Sombre',
+    meaning: 'Oscuro',
+  },
+  {
+    language_id: 2,
+    word: 'Finir',
+    meaning: 'Acabar',
+  },
+  {
+    language_id: 2,
+    word: 'Saison',
+    meaning: 'Temporada',
+  },
+  {
+    language_id: 2,
+    word: 'Mer',
+    meaning: 'Mar',
+  },
+  {
+    language_id: 2,
+    word: 'Baignade',
+    meaning: 'Nadar',
+  },
+  {
+    language_id: 2,
+    word: 'Pourri',
+    meaning: 'Podrido',
+  },
+  {
+    language_id: 2,
+    word: 'Traduire',
+    meaning: 'Traducir',
+  },
+  {
+    language_id: 2,
+    word: 'Coupable',
+    meaning: 'Culpable',
+  },
+  {
+    language_id: 2,
+    word: 'Vapeur',
+    meaning: 'Vapor',
+  },
+  {
+    language_id: 2,
+    word: 'Voyager',
+    meaning: 'Viajar',
+  },
+  {
+    language_id: 2,
+    word: 'Téléphoner',
+    meaning: 'Teléfono',
+  },
+  {
+    language_id: 2,
+    word: 'Numéro',
+    meaning: 'Número',
+  },
+  {
+    language_id: 2,
+    word: 'Ascenseur',
+    meaning: 'Ascensor',
+  },
+  {
+    language_id: 2,
+    word: 'Chaussettes',
+    meaning: 'Calcetines',
+  },
+  {
+    language_id: 2,
+    word: 'Fou',
+    meaning: 'Loco',
+  },
+  {
+    language_id: 2,
+    word: 'Manteau',
+    meaning: 'Abrigo',
+  },
+  {
+    language_id: 2,
+    word: 'Perdu',
+    meaning: 'Perdido',
+  },
+  {
+    language_id: 2,
+    word: 'Marteau',
+    meaning: 'Martillo',
+  },
+  {
+    language_id: 2,
+    word: 'Chose',
+    meaning: 'Cosa',
+  },
+  {
+    language_id: 2,
+    word: 'Ecoutez',
+    meaning: 'Escuchar',
+  },
+  {
+    language_id: 2,
+    word: 'Chemin de fer',
+    meaning: 'Ferrocarril',
+  },
+  {
+    language_id: 2,
+    word: 'Chômage',
+    meaning: 'Desempleo',
+  },
+  {
+    language_id: 2,
+    word: 'Cercle',
+    meaning: 'Círculo',
+  },
+  {
+    language_id: 2,
+    word: 'De valeur',
+    meaning: 'Valioso',
+  },
+  {
+    language_id: 2,
+    word: 'Squelette',
+    meaning: 'Esqueleto',
+  },
+  {
+    language_id: 2,
+    word: 'Dix-sept',
+    meaning: 'Diecisiete',
+  },
+  {
+    language_id: 2,
+    word: 'Meilleur',
+    meaning: 'Mejor',
+  },
+  {
+    language_id: 2,
+    word: 'Pire',
+    meaning: 'Peor',
+  },
+  {
+    language_id: 2,
+    word: 'Siège',
+    meaning: 'Asiento',
+  },
+  {
+    language_id: 2,
+    word: 'Tomber',
+    meaning: 'Caer',
+  },
+  {
+    language_id: 2,
+    word: 'Rappel',
+    meaning: 'Recordatorio',
+  },
+  {
+    language_id: 2,
+    word: 'Champ',
+    meaning: 'Campo',
+  },
+  {
+    language_id: 2,
+    word: 'Souris',
+    meaning: 'Ratón',
+  },
+  {
+    language_id: 2,
+    word: 'Concombre',
+    meaning: 'Pepino',
+  },
+  {
+    language_id: 2,
+    word: 'Aubergine',
+    meaning: 'Berenjena',
+  },
+  {
+    language_id: 2,
+    word: 'Maïs',
+    meaning: 'Maíz',
+  },
+  {
+    language_id: 2,
+    word: 'Tissu',
+    meaning: 'Tejido',
+  },
+  {
+    language_id: 2,
+    word: 'Argent',
+    meaning: 'Dinero',
+  },
+  {
+    language_id: 2,
+    word: 'Corde',
+    meaning: 'Cuerda',
+  },
+  {
+    language_id: 2,
+    word: 'Vase',
+    meaning: 'Jarrón',
+  },
+  {
+    language_id: 2,
+    word: 'Le pied',
+    meaning: 'Pie',
+  },
+  {
+    language_id: 2,
+    word: 'Idiome',
+    meaning: 'Expresión',
+  },
+  {
+    language_id: 2,
+    word: 'Tapis',
+    meaning: 'Alfombra',
+  },
+  {
+    language_id: 2,
+    word: 'Dossier',
+    meaning: 'Carpeta',
+  },
+  {
+    language_id: 2,
+    word: 'Enceinte',
+    meaning: 'Embarazada',
+  },
+  {
+    language_id: 2,
+    word: 'Introduire',
+    meaning: 'Presentar',
+  },
+  {
+    language_id: 2,
+    word: 'Du savon',
+    meaning: 'Jabón',
+  },
+  {
+    language_id: 2,
+    word: 'Malade',
+    meaning: 'Enfermo',
+  },
+  {
+    language_id: 2,
+    word: 'Nouvelles',
+    meaning: 'Noticia',
+  },
+  {
+    language_id: 2,
+    word: 'Avocat',
+    meaning: 'Abogado',
+  },
+  {
+    language_id: 2,
+    word: 'Envoyer',
+    meaning: 'Enviar',
+  },
+  {
+    language_id: 2,
+    word: 'Serveuse',
+    meaning: 'Camarero',
+  },
+  {
+    language_id: 2,
+    word: 'La caissière',
+    meaning: 'Cajero',
+  },
+  {
+    language_id: 2,
+    word: 'Scientifique',
+    meaning: 'Científico',
+  },
+  {
+    language_id: 2,
+    word: 'Fatigué',
+    meaning: 'Cansado',
+  },
+  {
+    language_id: 2,
+    word: 'salade',
+    meaning: 'Ensalada',
+  },
+  {
+    language_id: 2,
+    word: 'Biscuit',
+    meaning: 'Galleta',
+  },
+  {
+    language_id: 2,
+    word: 'Le beurre',
+    meaning: 'Mantequilla',
+  },
+  {
+    language_id: 2,
+    word: 'Fait maison',
+    meaning: 'Casero',
+  },
+  {
+    language_id: 2,
+    word: 'Orange',
+    meaning: 'Naranja',
+  },
+  {
+    language_id: 2,
+    word: 'Pain',
+    meaning: 'Pan',
+  },
+  {
+    language_id: 2,
+    word: 'Riz',
+    meaning: 'Arroz',
+  },
+  {
+    language_id: 2,
+    word: 'Pomme',
+    meaning: 'Manzana',
+  },
+  {
+    language_id: 2,
+    word: 'Épouse',
+    meaning: 'Mujer',
+  },
+  {
+    language_id: 2,
+    word: 'Mari',
+    meaning: 'Mardo',
+  },
+  {
+    language_id: 2,
+    word: 'Différent',
+    meaning: 'Diferente',
+  },
+  {
+    language_id: 2,
+    word: 'Seul',
+    meaning: 'Solitario',
+  },
+  {
+    language_id: 2,
+    word: 'Carré',
+    meaning: 'Plaza',
+  },
+  {
+    language_id: 2,
+    word: 'Rue',
+    meaning: 'Calle',
+  },
+  {
+    language_id: 2,
+    word: 'Vert',
+    meaning: 'Verde',
+  },
+  {
+    language_id: 2,
+    word: 'Éviter de',
+    meaning: 'Evitar',
+  },
+  {
+    language_id: 2,
+    word: 'Chauve',
+    meaning: 'Calvo',
+  },
+  {
+    language_id: 2,
+    word: 'Foi',
+    meaning: 'Destino',
+  },
+  {
+    language_id: 2,
+    word: 'Cicatrice',
+    meaning: 'Cicatriz',
+  },
+  {
+    language_id: 2,
+    word: 'Comportement',
+    meaning: 'Comportamiento',
+  },
+  {
+    language_id: 2,
+    word: 'Espoir',
+    meaning: 'Esperanza',
+  },
+  {
+    language_id: 2,
+    word: 'Temps',
+    meaning: 'Tiempo',
+  },
+  {
+    language_id: 2,
+    word: 'Ours',
+    meaning: 'Oso',
+  },
+  {
+    language_id: 2,
+    word: 'Cheval',
+    meaning: 'Caballo',
+  },
+  {
+    language_id: 2,
+    word: 'Danse',
+    meaning: 'Bailar',
+  },
+  {
+    language_id: 2,
+    word: 'sauce',
+    meaning: 'Salsa',
+  },
 ];
