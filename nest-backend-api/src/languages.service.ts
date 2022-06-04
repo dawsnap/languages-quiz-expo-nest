@@ -17,14 +17,31 @@ export class LanguagesService {
   }
 
   async getRandomWords(lang_id): Promise<any> {
-    const wordCount = await this.prisma.languages_words.count({
-      where: { language_id: { equals: parseInt(lang_id) } },
-    });
+    let wordCount;
+    try {
+      wordCount = await this.prisma.languages_words.count({
+        where: { language_id: { equals: parseInt(lang_id) } },
+      });
+    } catch (error) {
+      console.log(error);
+      throw new InternalServerErrorException(error);
+    }
+
+    let firstWord;
+    try {
+      firstWord = await this.prisma.languages_words.findFirst({
+        select: { id: true },
+        where: { language_id: { equals: parseInt(lang_id) } },
+      });
+    } catch (error) {
+      console.log(error);
+      throw new InternalServerErrorException(error);
+    }
 
     const idList = [];
     // generate 40 unique ids
     while (idList.length < 40) {
-      const r = Math.floor(Math.random() * wordCount) + 1;
+      const r = Math.floor(Math.random() * wordCount) + firstWord.id;
       if (idList.indexOf(r) === -1) idList.push(r);
     }
 
