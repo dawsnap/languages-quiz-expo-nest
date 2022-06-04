@@ -12,6 +12,8 @@ const getImage  = (language) => {
       return require('../assets/english_flag.png');
     case "Francés":
       return require('../assets/french_flag.png');
+    case "Francés":
+      return require('../assets/italian_flag.png');
   }
 }
 
