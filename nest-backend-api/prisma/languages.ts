@@ -7,4 +7,8 @@ export const languages = [
     id: 2,
     name: 'Francés',
   },
+  {
+    id: 3,
+    name: 'Italiano',
+  },
 ];
