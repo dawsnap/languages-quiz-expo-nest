@@ -108,6 +108,7 @@ const Homescreen = ({ navigation }) => {
         buttonText={'Ver ránking'}/>
         </View>
         </View>
+        {(value === 2 || value === 3) && <Text style={{color: '#bfc7d5'}}>Disclaimer: El idioma seleccionado utiliza una lista de palabras autotraducidas, pueden no ser correctas</Text> }
         <CustomButton 
         onPress={() => navigation.navigate('Quiz',
         {
