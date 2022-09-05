@@ -1,6 +1,9 @@
 <p align="center">
   <img width="200" src="https://qr.expo.dev/expo-go?owner=dawsnap&slug=hybrid-app-tfg-davidsoriano&releaseChannel=default&host=exp.host">
-  <p align="center">Scan this with your camera and the Expo GO app installed in your device to run the hybrid app</p>
+  <p align="center">Scan this with your camera and the Expo GO app installed in your device to run the hybrid app<br>
+    <b>Disclaimer: This prototype will become unusable on Nov. 28 2022 due to Heroku's end to the free tier plans</b>
+  </p>
+  
 </p>
 
 ## Info:
